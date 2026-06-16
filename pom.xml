@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.currency</groupId>
 	<artifactId>conversion-exchange</artifactId>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>conversion-exchange</name>
 	<description/>
@@ -29,6 +30,10 @@
 	<properties>
 		<java.version>21</java.version>
 	</properties>
+
+	<modules>
+		<module>limits-service</module>
+	</modules>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
