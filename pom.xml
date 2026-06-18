@@ -32,7 +32,8 @@
 	</properties>
 
 	<modules>
-		<module>limits-service</module>
+		<module>currency-conversion-service</module>
+		<module>currency-exchange-service</module>
 	</modules>
 	<dependencies>
 		<dependency>
