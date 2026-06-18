@@ -72,6 +72,10 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 
 		<!-- Use the standard test starter which provides testing utilities -->
 		<dependency>
