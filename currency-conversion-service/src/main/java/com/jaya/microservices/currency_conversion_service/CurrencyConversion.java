@@ -5,47 +5,46 @@ import java.math.BigDecimal;
 public class CurrencyConversion {
 
     private Long id;
-
     private String from;
-
     private String to;
-
     private BigDecimal conversionMultiple;
-
     private BigDecimal quantity;
-
     private BigDecimal totalCalculatedAmount;
-
     private String environment;
 
-    public CurrencyConversion() {
+    public CurrencyConversion(Long id, String from, String to, BigDecimal conversionMultiple, BigDecimal quantity, BigDecimal totalCalculatedAmount, String environment)
+    {
+        this.id = id;
+        this.from = from;
+        this.to = to;
+        this.conversionMultiple = conversionMultiple;
+        this.quantity = quantity;
+        this.totalCalculatedAmount = totalCalculatedAmount;
+        this.environment = environment;
     }
 
-    public CurrencyConversion(String environment, BigDecimal totalCalculatedAmount, BigDecimal quantity, BigDecimal conversionMultiple, String to, String from, Long id)
-    {
-        this.environment = environment;
-        this.totalCalculatedAmount = totalCalculatedAmount;
-        this.quantity = quantity;
-        this.conversionMultiple = conversionMultiple;
-        this.to = to;
-        this.from = from;
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getEnvironment() {
-        return environment;
+    public String getFrom() {
+        return from;
     }
 
-    public void setEnvironment(String environment) {
-        this.environment = environment;
+    public void setFrom(String from) {
+        this.from = from;
     }
 
-    public BigDecimal getTotalCalculatedAmount() {
-        return totalCalculatedAmount;
+    public String getTo() {
+        return to;
     }
 
-    public void setTotalCalculatedAmount(BigDecimal totalCalculatedAmount) {
-        this.totalCalculatedAmount = totalCalculatedAmount;
+    public void setTo(String to) {
+        this.to = to;
     }
 
     public BigDecimal getQuantity() {
@@ -64,40 +63,19 @@ public class CurrencyConversion {
         this.conversionMultiple = conversionMultiple;
     }
 
-    public String getTo() {
-        return to;
+    public BigDecimal getTotalCalculatedAmount() {
+        return totalCalculatedAmount;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setTotalCalculatedAmount(BigDecimal totalCalculatedAmount) {
+        this.totalCalculatedAmount = totalCalculatedAmount;
     }
 
-    public String getFrom() {
-        return from;
+    public String getEnvironment() {
+        return environment;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    @Override
-    public String toString() {
-        return "CurrencyConversion{" +
-                "id=" + id +
-                ", from='" + from + '\'' +
-                ", to='" + to + '\'' +
-                ", conversionMultiple=" + conversionMultiple +
-                ", quantity=" + quantity +
-                ", totalCalculatedAmount=" + totalCalculatedAmount +
-                ", environment='" + environment + '\'' +
-                '}';
+    public void setEnvironment(String environment) {
+        this.environment = environment;
     }
 }
