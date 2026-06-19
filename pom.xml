@@ -35,6 +35,7 @@
 		<module>currency-conversion-service</module>
 		<module>currency-exchange-service</module>
         <module>naming-server</module>
+        <module>api-gateway</module>
 	</modules>
 	<dependencies>
 		<dependency>
